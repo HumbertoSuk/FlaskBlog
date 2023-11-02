@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artículo de Blog con Tabla de Imágenes</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+    
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img class="logo" src="logo.png" alt="Mi foto">  
+            <img class="logo" src="../../static/img/logo.png" alt="Mi foto">  
         </a>
         Mi primer blog
     </header>
@@ -18,7 +19,7 @@
         <div class="left-column">
             <h1>El Título del Artículo</h1>
             <p class="parrafo">Publicado el 22 de Septiembre de 2023</p>
-            <img src="Art1.jpg" alt="Imagen del artículo" class="logo">
+            <img src="../../static/img/Art1.jpg" alt="Imagen del artículo" class="logo">
             <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue lectus non ex mattis, sit amet cursus metus congue. Integer non sem eu justo viverra blandit. Suspendisse ultrices mi a enim iaculis, non eleifend quam tincidunt.</p>
                 <!-- Tabla de Imágenes -->
                 <table class="image-table">
@@ -30,15 +31,15 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="Mewo.jpg" alt="Imagen 1"></td>
+                            <td><img src="../../static/img/Mewo.jpg" alt="Imagen 1"></td>
                             <td>Descripción de la Imagen 1</td>
                         </tr>
                         <tr>
-                            <td><img src="dreamer.png" alt="Imagen 2"></td>
+                            <td><img src="../../static/img/dreamer.png" alt="Imagen 2"></td>
                             <td>Descripción de la Imagen 2</td>
                         </tr>
                         <tr>
-                            <td><img src="Stardust.png" alt="Imagen 3"></td>
+                            <td><img src="../../static/img/Stardust.png" alt="Imagen 3"></td>
                             <td>Descripción de la Imagen 3</td>
                         </tr>
                     </tbody>
