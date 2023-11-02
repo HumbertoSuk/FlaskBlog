@@ -1,0 +1,158 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Cambia el color de fondo */
+}
+
+header {
+    text-align: left;
+    font-size: 46px; /* Aumenta el tamaño del encabezado */
+    padding: 20px 0; /* Añade espacio en la parte superior e inferior */
+    background-color: #6a1b9a; /* Cambia el color de fondo */
+    color: white; /* Cambia el color de texto */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Añade espacio en los márgenes y centra el contenido */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff; /* Cambia el color de fondo */
+    border-radius: 8px; /* Agrega bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+.left-column {
+    flex: 3;
+    margin-right: 30px;
+    padding: 20px; /* Añade espacio interno */
+}
+
+.right-column {
+    flex: 1;
+    margin-left: 30px;
+    padding: 20px;
+    background-color: #f2f2f2; /* Cambia el color de fondo */
+    border-radius: 8px; /* Agrega bordes redondeados */
+}
+
+.subscribe {
+    text-align: center;
+    padding: 20px;
+}
+
+.subscribe input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-right: 10px;
+    
+}
+
+.subscribe button {
+    padding: 10px 30px;
+    background-color: #6a1b9a; /* Cambia el color del botón */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agrega una animación de color al botón */
+    margin-top: 10px; /* Agrega margen superior para separar del cuadro de entrada */
+}
+
+.subscribe button:hover {
+    background-color: #4a148c; /* Cambia el color al pasar el mouse */
+}
+
+.footer {
+    text-align: center;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+    clear: both;
+}
+
+/* Estilos para los párrafos y los títulos */
+.parrafo {
+    text-align: justify;
+    line-height: 1.6; /* Ajusta el interlineado */
+    margin-bottom: 20px;
+    color: #333; /* Cambia el color de texto */
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 28px; /* Aumenta el tamaño de los títulos */
+    color: #6a1b9a; /* Cambia el color de los títulos */
+}
+
+/* Estilo para enlaces */
+.link {
+    color: #6a1b9a;
+    text-decoration: none;
+    transition: color 0.3s; /* Agrega una animación al color de los enlaces */
+}
+
+.link:hover {
+    color: #4a148c; /* Cambia el color al pasar el mouse sobre los enlaces */
+}
+
+/* Estilo para degradados */
+.gradient-background {
+    background: linear-gradient(to bottom, #6a1b9a, #4a148c); /* Agrega un degradado */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6A0572;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16103A;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border: 4px solid #6A0572;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+        /* Estilo para la tabla */
+        .image-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .image-table th,
+        .image-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .image-table th {
+            background-color: #f2f2f2;
+        }
+
+        
+        /* Estilo para las imágenes dentro de la tabla */
+        .image-table img {
+            max-width: 100px;
+            height: auto;
+        }
+
+

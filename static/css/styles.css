@@ -1,0 +1,402 @@
+body {
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;/* se muestra flexbox de acuerdo a las propiedades, en este caso para ordenar el texto e imagen*/
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 20px; /* Margen */
+    padding: 20px; /* Espacio interno */
+    background-color: #690e80; 
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 42px; /*Tamaño*/
+}
+
+/* Estilos para la imagen */
+.container img {
+    max-width: 100px; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Borde redondeado de 10 píxeles */
+    box-shadow: 0 0 10px rgb(143, 87, 131); /* Sombra */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/* Titulos en el container principal*/
+.container h1 {
+    font-size: 40px;
+    line-height: 1.5; /*interlineado*/
+    color: #6a1b9a;
+    margin: 0;
+    font-family: "Times New Roman", serif;
+}
+
+
+/* Estilos para el contenedor padre de los enlaces */
+.Article {
+    display: flex; /*contenedor flexible*/
+    flex-direction: column; /* contenedores en direccion de columna */
+    /*margenes*/
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los contenedores .SonArticle dentro del contenedor padre */
+.Article .SonArticle {
+    max-width: 620px; /* Ajusta el ancho máximo a 620 */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre los contenedores */
+    padding: 20px; /* Espacio interno */
+    transition: transform 0.2s ease-in-out; /* Agrega una animación de transformación */
+}
+
+/* Agregar una animación */
+.Article .SonArticle:hover {
+    transform: scale(1.05); /* Escala un 5% más grande al pasar el mouse */
+}
+
+
+/* Estilos para el contenedor padre  de abajo*/
+.bottomContainer {
+    display: flex; /* Utiliza flexbox para alinear los contenedores en una fila */
+    justify-content: space-between; /* Espacio entre los contenedores */
+    /*margenes*/
+    margin-left: 60px; 
+    margin-right: 60px; 
+    margin-bottom: 20px; 
+    margin-top: 40;
+    clear: both; /* Evita solapamiento de elementos flexbox */
+    text-align: justify; /* Texto justificado */
+}
+
+/* Estilos para el contenedor izquierdo */
+.ContLeft {
+    flex: 1; /* Expande el contenedor para ocupar el espacio disponible */
+    padding: 10px; /* Espacio interno alrededor del container */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor central */
+.ContCenter {
+    flex: 1; /* Expande el contenedor para ocupar el espacio disponible */
+    padding: 10px; /* Espacio interno alrededor del container */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor derecho */
+.ContRight {
+    flex: 1; /* Expande el contenedor para ocupar el espacio disponible */
+    padding: 10px; /* Espacio interno alrededor del container */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para centrar el container de las etiquetas h dentro de los contenedores */
+.ContLeft h2,
+.ContCenter h2,
+.ContRight h2 {
+    text-align: center;
+}
+
+/* Estilos para el texto de los contenedores */
+.ContLeft p,
+.ContCenter p,
+.ContRight p {
+    text-align: justify;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+
+/* Estilos para el contenedor de información a la derecha  donde tiene de hijos suscribirse y aceca d e*/
+.Sub-Inf {
+
+    padding: 10px; /*Espaciado interno*/
+    position: absolute; /*No se puede mover */
+    top: 0; /* especificar la distancia desde la parte superior de un elemento posicionado con position absolute, si es 0 es en la parte donde es mas superior*/
+    margin-top: 240px;
+    left: 740px; /*de la misma manera que top funciona*/
+    right: 30px;
+    max-width: 500px; /*anchura maxima*/
+    max-height: 490px; /*altura maxima*/
+    text-align: justify;
+    word-wrap: break-word; /*No se desbordan las palabras*/
+    background-color: #6d6a67; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra  */
+}
+
+
+/* Estilos para los títulos dentro del Sub-Inf */
+.Sub-Inf h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #4b137d;
+}
+
+/* Estilos para el contenedor de "Información sobre mí" (formato original) */
+.acerca-de {
+    margin-top: 20px; /*margen superior */
+    margin-bottom: 20px;
+    overflow: auto; /**/
+    max-width: 500px; /*anchura maxima*/
+    max-height: 240px; /*altura maxima*/
+    margin-left: 20px;
+    background-color: #fffafa; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra  */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Estilos para el container de texto dentro de ".acerca-de" (formato original) */
+.acerca-de p {
+    word-wrap: break-word;
+    max-width: 100%;
+    max-height: 200px; /*altura maxima*/
+}
+
+/* Estilos para el contenedor de "Suscríbete" (formato original) */
+.suscribe {
+    margin-bottom: 20px;
+    background-color: #fffafa; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra  */
+    padding: 20px; /* Espacio interno */
+    margin-left: 20px;
+}
+
+/* Estilos para el textbox dentro de "Suscríbete" (formato original) */
+.suscribe input[type="text"] {
+    width: 95%;
+    padding: 5px;
+}
+
+/* Estilos para el botón dentro de ".suscribe" (formato original) */
+.suscribe button {
+    background-color: #6a1b9a; /* Lila */
+    color: #fff;
+    border:none; /*Sin bore*/
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 85px;
+    margin-right: 85px;
+    cursor: pointer;
+    width: 50%;
+}
+
+/* Cambiar el estilo del botón al pasar el mouse sobre él (formato original) */
+.suscribe button:hover {
+    background-color: #4b137d; /* Lila más oscuro al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    text-align: center;
+    background-color: #6a1b9a;
+    color: white;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6A0572;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16103A;
+}
+
+
+
+
+
+
+
+/* Tablets (Pantallas con un ancho mínimo de 720px y un ancho máximo de 1020px) */
+@media (min-width: 720px) and (max-width: 1020px) {
+
+
+    body {
+        margin: 20px; /* Margen general del cuerpo del documento */
+        font-family: "Comic Sans MS", cursive; /* Cambio de fuente */
+    }
+
+    .container img {
+        max-width: 80px; /* Ajusta el ancho máximo de las imágenes */
+        margin: 10px 0; /* Espacio entre la imagen y otros elementos */
+        margin-left: 150px; /* Margen izquierdo específico para las imágenes */
+    }
+
+    .container .text h1 {
+        font-size: 32px; /* Cambia el tamaño del título */
+    }
+
+    .Article {
+        margin: 0; /* Elimina el margen para los elementos con la clase .Article */
+    }
+
+    .Article .SonArticle {
+        max-width: 100%; /* Ajusta el ancho máximo de los elementos .SonArticle */
+        margin: 10px ; /* Espacio entre los elementos .SonArticle */
+    }
+
+    .Article .SonArticle p {
+        text-align: left; /* Alineación del texto a la izquierda dentro de .SonArticle */
+    }
+
+    .Sub-Inf {
+        display: flex; /* Cambio a una disposición flexible */
+        text-align: justify; /* Justificar el texto dentro de .Sub-Inf */
+        align-items: center; /* Centrar verticalmente los elementos */
+        position: static; /* Cambio de posición a estática (anula position: absolute;) */
+        margin-bottom: 10px; /* Espacio inferior entre elementos .Sub-Inf */
+        max-width: none; /* Elimina el ancho máximo */
+        word-wrap: none; /* Evita el corte de palabras */
+        margin-top: 20px; /* Espacio superior */
+    }
+
+    .Sub-Inf h2 {
+        font-size: 24px; /* Cambia el tamaño del título h2 */
+        margin-bottom: 10px; /* Espacio inferior entre títulos */
+        text-align: center; /* Alineación del texto al centro */
+        margin-top: 10px; /* Espacio superior entre títulos */
+    }
+
+    .acerca-de, .suscribe {
+        flex: 1; /* Establece la flexibilidad para .acerca-de y .suscribe */
+        padding: 10px; /* Espacio interno para estos elementos */
+        margin-top: 10px; /* Espacio superior entre estos elementos */
+    }
+
+    .acerca-de p, .suscribe input[type="text"] {
+        text-align: left; /* Alineación del texto a la izquierda */
+        max-width: 90%; /* Establece un ancho máximo */
+    }
+
+    .suscribe button {
+        width: auto; /* Ancho automático para el botón */
+        margin-top: 10px; /* Espacio superior para el botón */
+    }
+
+    .bottomContainer {
+        flex-direction: column; /* Cambio a una disposición de columna */
+        margin: 10px; /* Margen general */
+        padding: 20px; /* Espacio interno */
+        justify-content: space-between; /* Espacio entre los contenedores significa que los elementos dentro del contenedor se distribuirán de manera uniforme a lo largo  */
+    }
+
+    .ContLeft, .ContCenter, .ContRight {
+        flex: 1; /* Establece la flexibilidad para estos elementos */
+        padding: 10px; /* Espacio interno */
+    }
+
+    .pagina1-contenedor, .pagina2-contenedor, .pagina3-contenedor {
+        margin: 10px; /* Margen para estos contenedores */
+        padding: 20px; /* Espacio interno */
+    }
+}
+
+/* Ajustes para dispositivos móviles (Pantallas con un ancho máximo de 720px) */
+@media (max-width: 720px) {
+    /* Estilos para el contenedor principal */
+    .container {
+        display: flex; /* Cambio a una disposición flexible */
+        flex-direction: column; /* Dirección de columna para apilar elementos verticalmente */
+        align-items: center; /* Centrar los elementos horizontalmente */
+        text-align: center; /* Centrar el texto horizontalmente */
+    }
+    
+    /* Estilos para el texto */
+    .container .text {
+        margin: 10px; /* Margen alrededor del texto */
+        order: 1; /* Cambia el orden del texto para que aparezca después de la imagen */
+    }
+    
+    .container .text h1 {
+        font-size: 30px; /* Cambia el tamaño del título h1 */
+        white-space: nowrap; /* Evita el salto de línea */
+        overflow: hidden; /* Oculta el exceso de texto */
+        text-overflow: ellipsis; /* Agrega puntos suspensivos (...) cuando el texto es demasiado largo */
+    }
+    
+    /* Estilos para la imagen */
+    .container img {
+        max-width: 80px; /* Ajusta el ancho máximo de la imagen */
+        margin: 10px auto; /* Centra la imagen horizontalmente con margen superior e inferior */
+        display: block; /* Evita espacios adicionales debajo de la imagen */
+        order: 2; /* Cambia el orden de la imagen para que aparezca antes del texto */
+    }
+    
+    
+        .Article {
+            margin: 0; /* Elimina el margen para los elementos con la clase .Article */
+        }
+    
+        .Article .SonArticle {
+            max-width: 100%; /* Ajusta el ancho máximo de los elementos .SonArticle */
+            margin: 10px 0; /* Espacio entre los elementos .SonArticle */
+        }
+    
+        .Article .SonArticle p {
+            text-align: left; /* Alineación del texto a la izquierda dentro de .SonArticle */
+        }
+    
+        .Sub-Inf {
+            position: static; /* Cambio de posición a estática (anula position: absolute;) */
+            margin: 20px; /* Margen general para .Sub-Inf */
+            max-width: none; /* Elimina el ancho máximo */
+            word-wrap: none; /* Evita el corte de palabras */
+        }
+    
+        .acerca-de {
+            margin-top: 20px; /* Espacio superior para .acerca-de */
+            text-align: left; /* Alineación del texto a la izquierda */
+        }
+    
+        .suscribe input[type="text"] {
+            width: 90%; /* Establece un ancho del 90% para el campo de entrada de texto */
+        }
+    
+        .bottomContainer {
+            flex-direction: column; /* Cambio a una disposición de columna */
+            margin: 0; /* Margen general */
+            padding: 20px; /* Espacio interno */
+        }
+    
+        .ContLeft, .ContCenter, .ContRight {
+            flex: 1; /* Establece la flexibilidad para estos elementos */
+            padding: 10px; /* Espacio interno */
+        }
+    
+        .pagina1-contenedor, .pagina2-contenedor, .pagina3-contenedor {
+            margin: 0; /* Margen para estos contenedores */
+            padding: 20px; /* Espacio interno */
+        }
+}
